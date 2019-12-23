@@ -1,3 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+body {
+	margin: 5% 10% 10% 10%;
+	border: 5%;
+	padding: 5%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	
+		
+}
+
+a {
+	font-size: 20px; 
+	color: gray;
+	text-decoration: none;
+	padding-top: 2%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.InnovationStart {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15%;
+	margin-top: 5%;
+	text-align: center;
+	align-items: center;
+}
+
+
+h1 {
+	font-size: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.GetStarted {
+	font-size: 20px;
+	border: .75px solid black;
+	padding: 5%;
+	width: 50%;
+	text-align: center;
+	/* border: 10px solid red; */
+}	
+
+.TextCircle {
+	display: flex;
+	flex-direction: row;
+	margin-top: 3%;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.Column1 {
+	display: flex;
+	column-count: 2;
+	column-width: 5px;
+	border-top: 1px solid black;
+	margin-top: 80px;
+	/* border: 10px solid red; */
+}
+
+.Features {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+.About {
+	display: flex;
+	flex-direction: column;
+	align-content: end;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	padding-left: 30px;
+}
+
+.middle-img {
+	display: flex;
+	width: 100%;
+
+	
+	/* border: 10px solid red; */
+}
+
+.Column2 {
+	display: flex;
+	align-items: flex-start;
+	column-count: 3;
+	column-width: 5px;
+	border-bottom: 1px solid black;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+	/* border: 10px solid red; */
+}
+
+.Services {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.Product {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	padding-left: 30px;
+}
+
+.Vision {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	padding-left: 30px;
+}
+
+#Contact {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	/* border: 10px solid red; */
+}
+
+#Phone {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	/* border: 10px solid red; */
+}
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/* border: 10px solid red; */
+}
+/* 800 px max width media querie */
+@media(max-width: 800px) {
+	.Circle {
+		display: none;
+	}
+
+	.header {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		height: 15vh;
+		align-items: center;
+		width: 100%;
+	}
+
+	nav {
+	justify-content: space-between;
+	width: 100%;
+	}
+
+	.InnovationStart {
+	align-items: center;
+	width: 100%;
+	margin-top: 8%;
+	}
+
+}
+/* 500 px max width media querie*/
+@media(max-width: 500px) {
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0%;
+		width: 100%;
+			
+	}
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column-reverse;
+		height: 80vh;
+	}
+	
+	a {
+		font-size: 20px; 
+		color: gray;
+		text-decoration: none;
+		padding-top: 4%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-top: 10%;
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 4%;
+	}
+
+	.Circle {
+		display: none;
+	}
+
+	.GreatIdea {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	
+	.GreatIdea a {
+		display: flex;
+		justify-content: center;
+		text-decoration: none; 
+		text-align: center;
+		align-items: center;
+	} 
+
+	.InnovationStart {
+		display: flex;
+		flex-direction: column;
+		margin-top: 15%;
+		text-align: center;
+		align-content: center;
+		justify-content: center;
+		border: 4px;
+	}
+
+	h1 {
+		font-size: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.GetStarted {
+		font-size: 20px;
+		border: .75px solid black;
+		padding: 5%;
+		width: 50%;
+		text-align: center;
+	}
+
+	.Column1 {
+		border-top: 1px solid black;
+		margin-top: 20%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		/* border: 10px solid red; */
+
+	}
+
+	.About {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0px;
+		margin-bottom: 50px;
+		padding-left: 2px;
+		border: 2px;
+
+	}
+
+	.Column2 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border-bottom: 1px solid black;
+		margin-top: 25px;
+		margin-bottom: 50px;
+		padding-bottom: 15px;
+	}
+
+	.Product {
+		margin-top: 10px;
+		margin-bottom: 50px;
+		padding-left: 0px;
+	}
+
+	.Vision {
+		margin-top: 10px;
+		margin-bottom: 50px;
+		padding-left: 0px;
+	}
+
+	.logo {
+		width: 50%;
+	}
+}
 
 
